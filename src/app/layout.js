@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Quick Send",
-  description: "Whatsapp + Telegram",
+  description: "Send Whatsapp/Telegram Messages to your contacts quickly",
 };
 
 export default function RootLayout({ children }) {
