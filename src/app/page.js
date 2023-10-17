@@ -73,7 +73,7 @@ export default function Home() {
                     Send
                 </button>
             </div>
-            <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center '>
+            <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-gray-400 '>
                 <p className=''>
                     &copy; Copyright 2023{' '}
                     <a
@@ -83,20 +83,44 @@ export default function Home() {
                         Sarthak S Kumar
                     </a>
                 </p>
-                <ul className=' flex gap-x-5 pb-2 text-sm sm:text-lg '>
+                <ul className=' flex gap-x-10 py-2 '>
                     <li>
-                        <a href=''>
-                            <BsLinkedin className=' inline-block' /> LinkedIn
+                        <a
+                            href='https://www.linkedin.com/in/sarthakskumar/'
+                            target='_blank'
+                            className={
+                                messenger === 'whatsapp'
+                                    ? `hover:text-green-500`
+                                    : `hover:text-blue-500`
+                            }
+                        >
+                            <BsLinkedin className=' text-lg hover:scale-110' />
                         </a>
                     </li>
                     <li>
-                        <a href=''>
-                            <BsGithub className=' inline-block' /> Github
+                        <a
+                            href=' https://www.github.com/sarthakskumar/'
+                            target='_blank'
+                            className={
+                                messenger === 'whatsapp'
+                                    ? `hover:text-green-500`
+                                    : `hover:text-blue-500`
+                            }
+                        >
+                            <BsGithub className=' text-lg hover:scale-110' />
                         </a>
                     </li>
                     <li>
-                        <a href=''>
-                            <BsInstagram className=' inline-block' /> Instagram
+                        <a
+                            href=' https://www.instagram.com/sarthakskumar'
+                            target='_blank'
+                            className={
+                                messenger === 'whatsapp'
+                                    ? `hover:text-green-500`
+                                    : `hover:text-blue-500`
+                            }
+                        >
+                            <BsInstagram className=' text-lg hover:scale-110' />
                         </a>
                     </li>
                 </ul>
