@@ -21,8 +21,14 @@ export default function Home() {
     };
 
     return (
-        <main className='bg-gradient-to-b from-indigo-900 to-gray-800 min-h-screen flex flex-col items-center justify-center text-white'>
-            <h1 className='text-4xl font-extrabold mb-8'>QuickSend</h1>
+        <main
+            className={`${
+                messenger === 'whatsapp'
+                    ? `bg-[url('../../public/whatsapp.svg')]`
+                    : `bg-[url('../../public/telegram.svg')]`
+            } bg-no-repeat bg-cover bg-center min-h-screen flex flex-col items-center justify-center text-white`}
+        >
+            <h1 className='text-6xl font-extrabold mb-24'>QuickSend</h1>
             <div className='mb-8'>
                 <button
                     className={`${
@@ -73,7 +79,7 @@ export default function Home() {
                     Send
                 </button>
             </div>
-            <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-gray-400 '>
+            <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-black '>
                 <p className=''>
                     &copy; Copyright 2023{' '}
                     <a
@@ -88,11 +94,7 @@ export default function Home() {
                         <a
                             href='https://www.linkedin.com/in/sarthakskumar/'
                             target='_blank'
-                            className={
-                                messenger === 'whatsapp'
-                                    ? `hover:text-green-500`
-                                    : `hover:text-blue-500`
-                            }
+                            className={`hover:text-white`}
                         >
                             <BsLinkedin className=' text-lg hover:scale-110' />
                         </a>
@@ -101,11 +103,7 @@ export default function Home() {
                         <a
                             href=' https://www.github.com/sarthakskumar/'
                             target='_blank'
-                            className={
-                                messenger === 'whatsapp'
-                                    ? `hover:text-green-500`
-                                    : `hover:text-blue-500`
-                            }
+                            className={`hover:text-white`}
                         >
                             <BsGithub className=' text-lg hover:scale-110' />
                         </a>
@@ -114,11 +112,7 @@ export default function Home() {
                         <a
                             href=' https://www.instagram.com/sarthakskumar'
                             target='_blank'
-                            className={
-                                messenger === 'whatsapp'
-                                    ? `hover:text-green-500`
-                                    : `hover:text-blue-500`
-                            }
+                            className={`hover:text-white`}
                         >
                             <BsInstagram className=' text-lg hover:scale-110' />
                         </a>
