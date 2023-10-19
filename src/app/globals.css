@@ -8,3 +8,171 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+/* General styles */
+body, html {
+  height: 100%; /* Set body and html to full height of the viewport */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  height: 100%; /* Set div.app to full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  background-color: #fff; /* Default background color for light mode */
+  color: #333; /* Default text color for light mode */
+}
+
+.app.dark {
+  background-color: #222; /* Background color for dark mode */
+  color: #fff; /* Text color for dark mode */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+}
+
+/* Messenger buttons */
+.messenger-buttons {
+  display: flex;
+}
+
+.messenger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.messenger-button.active {
+  color: #007bff;
+}
+
+.messenger-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* Phone input and Send button */
+.main-content {
+  max-width: 400px;
+  margin: auto; /* Center horizontally */
+  text-align: center;
+  padding: 20px;
+  flex-grow: 1; /* Expand to fill available space */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  justify-content: center; /* Center vertically */
+}
+
+.phone-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+.send-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.social-link.whatsapp {
+  color: #25d366;
+}
+
+.social-link.telegram {
+  color: #0088cc;
+}
+
+.social-icon {
+  font-size: 24px;
+}
+
+
+/* Send button for light mode */
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Disabled Send button for light mode */
+.send-button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Send button for dark mode */
+.dark .send-button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Disabled Send button for dark mode */
+.dark .send-button.disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
