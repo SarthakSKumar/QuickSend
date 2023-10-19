@@ -6,6 +6,8 @@ import 'react-phone-number-input/style.css'; // Import the CSS for PhoneInput
 import { BsWhatsapp, BsTelegram, BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs';
 
 export default function Home() {
+    const date = new Date();
+    const year = date.getFullYear();
     const [value, setValue] = useState('');
     const [messenger, setMessenger] = useState('whatsapp');
     const API_URL = messenger === 'whatsapp' ? 'https://wa.me' : 'https://t.me';
@@ -81,7 +83,7 @@ export default function Home() {
             </div>
             <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-black '>
                 <p className=''>
-                    &copy; Copyright 2023{' '}
+                    &copy; {year}{' '}
                     <a
                         href='https://github.com/SarthakSKumar/QuickSend'
                         target='_blank'
