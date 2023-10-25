@@ -75,7 +75,7 @@ export default function Home() {
             </div>
             <div className=' absolute bottom-0 w-full flex flex-col items-center p-5 justify-center text-gray-400 '>
                 <p className=''>
-                    &copy; Copyright 2023{' '}
+                    &copy;{' '}
                     <a
                         href='https://github.com/SarthakSKumar/QuickSend'
                         target='_blank'
