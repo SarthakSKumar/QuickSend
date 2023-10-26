@@ -223,12 +223,12 @@ export default function Home() {
         />
         <button
           className={`${
-            isValidPhoneNumber(value||"")
+            isValidPhoneNumber(value||"") // Same as below comment
               ? "bg-blue-500 hover:bg-blue-600"
               : "bg-gray-600"
           } text-white px-4 py-2 rounded-lg mt-4 w-full`}
           onClick={handleSendClick}
-          disabled={!isValidPhoneNumber(value||"")}
+          disabled={!isValidPhoneNumber(value||"")} // Updated isValidPhoneNumber(value) to isValidPhoneNumber(value||"") to pass empty string when value is undefined
         >
           Send
         </button>
