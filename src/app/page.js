@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 // import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 // import { useState } from "react";
@@ -137,7 +137,13 @@
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import { useState } from "react";
 import "react-phone-number-input/style.css"; // Import the CSS for PhoneInput
-import { BsWhatsapp, BsTelegram, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import {
+  BsWhatsapp,
+  BsTelegram,
+  BsLinkedin,
+  BsGithub,
+  BsInstagram,
+} from "react-icons/bs";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function Home() {
@@ -161,11 +167,13 @@ export default function Home() {
   };
 
   return (
-    <main className={`${
-      darkMode
-        ? "bg-gray-900 text-white"
-        : "bg-gradient-to-b from-indigo-900 to-gray-800 text-white"
-    } min-h-screen flex flex-col items-center justify-center`}>
+    <main
+      className={`${
+        darkMode
+          ? "bg-gray-900 text-white"
+          : "bg-gradient-to-b from-indigo-900 to-gray-800 text-white"
+      } min-h-screen flex flex-col items-center justify-center`}
+    >
       <div className="dark-mode-toggle absolute top-4 right-4">
         <button onClick={toggleDarkMode} className="dark-mode-button">
           {darkMode ? <FaSun /> : <FaMoon />}
@@ -198,7 +206,7 @@ export default function Home() {
       </div>
       <div className="w-80">
         <PhoneInput
-          className="text-md mb-4"
+          className="text-md mb-4 text-black"
           placeholder="Enter phone number"
           countrySelectProps={{ unicodeFlags: true }}
           value={value}
@@ -215,12 +223,12 @@ export default function Home() {
         />
         <button
           className={`${
-            isValidPhoneNumber(value)
+            isValidPhoneNumber(value||"") // Same as below comment
               ? "bg-blue-500 hover:bg-blue-600"
               : "bg-gray-600"
           } text-white px-4 py-2 rounded-lg mt-4 w-full`}
           onClick={handleSendClick}
-          disabled={!isValidPhoneNumber(value)}
+          disabled={!isValidPhoneNumber(value||"")} // Updated isValidPhoneNumber(value) to isValidPhoneNumber(value||"") to pass empty string when value is undefined
         >
           Send
         </button>
