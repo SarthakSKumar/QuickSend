@@ -8,12 +8,18 @@ QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send Whats
 
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](INSERT_UI_LINK_HERE)
+[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/SarthakSKumar/QuickSend/blob/master/README.md) 
+  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://quick-send.vercel.app)
+  [![Community Star](https://img.shields.io/badge/Community%20Star-%F0%9F%8C%9F-green.svg)](COMMUNITY_STAR_LINK)
+
 
 
 ## Features
-- 
+- Telegram Message Sending: In addition to WhatsApp, add support for sending messages on Telegram without the need to save contacts.
+- Sending WhatsApp Messages: QuickSend allows users to send WhatsApp messages without the need to save contacts.
+- Dark Mode: Offer a dark mode option for users who prefer a darker user interface.
+- Cross-Platform Compatibility: Ensure that QuickSend is accessible on various devices and operating systems, including mobile phones, tablets, and desktops.
+
 
 
 ## Instructions to run
