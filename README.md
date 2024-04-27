@@ -3,12 +3,14 @@
 <h1>
  ⭐️ QuickSend ⭐️
 </h1>
-<h2>QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send WhatsApp messages 💬 without the hassle of saving contacts. 🚀</h2>
+QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send WhatsApp messages 💬 without the hassle of saving contacts. 🚀
+<br>
 
+---
 
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/SarthakSKumar/QuickSend/blob/master/README.md)
 [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://quick-send.vercel.app)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Community Star](https://img.shields.io/badge/Community%20Star-%F0%9F%8C%9F-green.svg)](COMMUNITY_STAR_LINK)
 
 ## Features
 
