@@ -4,7 +4,7 @@
  ⭐️ QuickSend ⭐️
 </h1>
 <h2>
-QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send WhatsApp messages 💬 without the hassle of saving contacts. 🚀
+QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send WhatsApp messages 💬 without saving contacts. 🚀
 </h2>
 
 [![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/SarthakSKumar/QuickSend/blob/master/README.md)
@@ -15,7 +15,7 @@ QuickSend is a Progressive Web App (PWA) 📲💻 that enables you to send Whats
 
 - Telegram Message Sending: In addition to WhatsApp, add support for sending messages on Telegram without the need to save contacts.
 - Sending WhatsApp Messages: QuickSend allows users to send WhatsApp messages without the need to save contacts.
-- Dark Mode: Offer a dark mode option for users who prefer a darker user interface.
+- Dark Mode: Offer a dark mode option for users who prefer a darker interface.
 - Cross-Platform Compatibility: Ensure that QuickSend is accessible on various devices and operating systems, including mobile phones, tablets, and desktops.
 
 ## Instructions to run
